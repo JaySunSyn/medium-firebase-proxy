@@ -1,7 +1,9 @@
 const functions = require('firebase-functions');
-var rp = require('request-promise');
+const rp = require('request-promise');
+const cors = require('cors')({origin: true});
 
 exports.medium = functions.https.onRequest((request, response) => {
+    cors(request, response, () => {});
     const username = 'YOUR_MEDIUM_USERNAME';
     const url = 'https://medium.com/@"+username+"/latest?format=json';
     
