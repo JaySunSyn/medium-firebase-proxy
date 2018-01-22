@@ -4,7 +4,7 @@ const cors = require('cors')({origin: true});
 
 exports.medium = functions.https.onRequest((request, response) => {
     cors(request, response, () => {});
-    const username = 'YOUR_MEDIUM_USERNAME';
+    const username = 'jalalio';
     const url = `https://medium.com/@${username}/latest?format=json`;
     
     return rp(url)
