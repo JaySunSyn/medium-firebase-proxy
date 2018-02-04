@@ -28,7 +28,7 @@ cd medium-firebase-proxy
 ```
 
 ## 4. Add your medium username
-open `functions/index.js``
+open `functions/index.js`
 replace `YOUR_MEDIUM_USERNAME` with your actual username
 
 ## 5. Add your Firebase project id
